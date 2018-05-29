@@ -69,7 +69,7 @@ def main():
                        'actions': np.array(actions)}
         
         # Save the expert data
-        with open('hopper_expert.pkl', 'wb') as f:
+        with open('./expert_data/{}.pkl'.format(args.envname), 'wb') as f:
             pickle.dump(expert_data, f)
 
 if __name__ == '__main__':
