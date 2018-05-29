@@ -67,6 +67,10 @@ def main():
 
         expert_data = {'observations': np.array(observations),
                        'actions': np.array(actions)}
+        
+        # Save the expert data
+        with open('hopper_expert.pkl', 'wb') as f:
+            pickle.dump(expert_data, f)
 
 if __name__ == '__main__':
     main()
