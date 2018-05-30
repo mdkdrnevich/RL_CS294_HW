@@ -1,5 +1,7 @@
 # CS294-112 HW 1: Imitation Learning
 
+## UPDATE: This _requires_ MuJoCo version 1.31, OpenAI Gym 0.7.4, and mujoco-py 0.5.7
+
 Dependencies: TensorFlow, MuJoCo version 1.31, OpenAI Gym
 
 **Note**: MuJoCo versions until 1.5 do not support NVMe disks therefore won't be compatible with recent Mac machines.

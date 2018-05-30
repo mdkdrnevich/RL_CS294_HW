@@ -66,7 +66,11 @@ def main():
         print('std of return', np.std(returns))
 
         expert_data = {'observations': np.array(observations),
-                       'actions': np.array(actions)}
+                       'actions': np.array(actions).squeeze(1)}
+        
+        # Save the expert data
+        with open('./expert_data/{}.pkl'.format(args.envname), 'wb') as f:
+            pickle.dump(expert_data, f)
 
 if __name__ == '__main__':
     main()
